@@ -1,6 +1,6 @@
-#Version Control:
+# Version Control:
 
-##Git, GitHub and the Beauty of Commiting
+## Git, GitHub and the Beauty of Commiting
 
 **October 30, 2014**
 
