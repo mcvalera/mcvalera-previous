@@ -1,0 +1,71 @@
+body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+div {
+  border: 1px solid gray;
+}
+
+#header {
+
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  margin: 50px;
+}
+
+.blog_body {
+  margin-top: 70px;
+}
+
+#blog_title {
+
+}
+
+h3 {
+  text-align: center;
+}
+
+#date {
+
+}
+
+h5 {
+  text-align: center;
+}
+
+#divider {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#post p {
+  margin: 10px;
+}
+
+#likes p {
+  margin: 10px;
+}
+
+#comment_area {
+  max-width: 200px;
+}
+
+#comment_area p {
+  margin: 10px;
+}
+
+#footer {
+
+}
