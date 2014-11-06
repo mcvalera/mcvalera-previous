@@ -3,9 +3,10 @@ body {
   margin: 0 auto;
 }
 
-div {
+/*div {
   border: 1px solid gray;
-}
+}*/
+
 
 #header {
 
@@ -28,16 +29,8 @@ a {
   margin-top: 70px;
 }
 
-#blog_title {
-
-}
-
 h3 {
   text-align: center;
-}
-
-#date {
-
 }
 
 h5 {
@@ -50,6 +43,10 @@ h5 {
   padding-right: 15px;
 }
 
+#post {
+  border: 1px solid gray;
+}
+
 #post p {
   margin: 10px;
 }
@@ -60,12 +57,31 @@ h5 {
 
 #comment_area {
   max-width: 200px;
+  margin-top: 50px;
 }
 
 #comment_area p {
   margin: 10px;
 }
 
-#footer {
+#commenter {
 
+}
+
+#comment {
+  border: 1px solid gray;
+  max-width: 200px;
+  height: 100px;
+  margin-bottom: 200px;
+}
+
+#footer {
+  height:50px;
+  bottom: 0;
+  left: 0;
+}
+
+#id h6 {
+  text-align: center;
+  margin-left: 50%;
 }
