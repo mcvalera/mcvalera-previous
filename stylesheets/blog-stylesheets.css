@@ -56,6 +56,11 @@ h5 {
   font-weight: bold;
 }
 
+/*italicizes text */
+#i {
+  font-style: italic;
+}
+
 #likes p {
   margin: 10px;
 }
