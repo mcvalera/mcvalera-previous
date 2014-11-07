@@ -48,6 +48,10 @@ h5 {
 }
 
 #post p {
+  text-indent: 50px;
+}
+
+#post p {
   margin: 10px;
 }
 
