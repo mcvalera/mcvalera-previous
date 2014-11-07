@@ -48,11 +48,12 @@ h5 {
 }
 
 #post p {
+  margin: 10px;
   text-indent: 50px;
 }
 
-#post p {
-  margin: 10px;
+#bold {
+  font-weight: bold;
 }
 
 #likes p {
