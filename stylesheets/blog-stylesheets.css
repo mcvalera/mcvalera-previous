@@ -1,18 +1,23 @@
 body {
-  max-width: 700px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container {
-/*  border: 3px dotted green;*/
-  position: relative;
 }
 
-#header {
+.menu_wrapper {
+width: 100%;
+}
+
+.menu_wrapper ul {
+text-align: center;
+border-bottom: 2px solid #ece1e1;
+margin: 0;
+padding: 16px;
 }
 
 ul {
-  text-align: center;
+  padding: 0px;
 }
 
 li {
@@ -21,23 +26,42 @@ li {
 
 a {
   text-decoration: none;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #7c736b;
   margin: 55px;
 }
 
-.blog_body {
-  margin-top: 50px;
-  margin-bottom: 5px;
+a:hover {
+  color: #194775;
 }
 
-h1 {
+a:active {
+  font-weight: bold;
+}
+
+/*body starts below*/
+
+.body_wrapper {
+  max-width: 700px;
+  margin: 0 auto;
   text-align: center;
+  padding-bottom: 50px;
+  padding: 10px;
+}
+
+#blog_title {
+  text-align: center;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
+  font-size: x-large;
 }
 
 #date {
   text-align: center;
-  font-weight: bold;
   font-size: small;
   margin-bottom: 5px;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
 }
 
 #divider {
@@ -45,26 +69,19 @@ h1 {
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 13px;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
 }
 
-#post {
-  border: 1px solid gray;
-}
-
-#post p {
+.post p {
   margin: 25px 15px 10px 15px;
   text-indent: 50px;
   text-align: justify;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #335c85;
 }
 
 img {
-}
-
-#link {
-  text-decoration: none;
-  margin: 0px;
-  font-weight: bold;
-  color: gray;
 }
 
 #b {
@@ -76,17 +93,40 @@ img {
   font-style: italic;
 }
 
-#footer {
+.footer {
+  position: relative;
+  top: 35px;
   text-align: center;
-  margin-top: 5px;
-  bottom: 0;
-  left: 0;
+  border-top: 2px solid #ece1e1;
+  padding-top: 3px;
 }
 
-#footer p {
-  font-size: x-small;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.socmedia {
+  padding-top: 0px;
+}
+
+.socmedia ul {
+  margin-bottom: 5px;
+}
+
+.socmedia a {
+  margin: 0px;
+}
+
+.socmedia img {
+  height: 35px;
+  width: 35px;
+  margin: 2px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer #c {
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
 }
