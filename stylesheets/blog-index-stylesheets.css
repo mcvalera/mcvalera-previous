@@ -24,7 +24,7 @@ li {
   display: inline-block;
 }
 
-a {
+.menu_wrapper a {
   text-decoration: none;
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #7c736b;
@@ -47,55 +47,29 @@ a:active {
   padding: 10px;
 }
 
-#myphoto {
-  margin-top: 150px;
-  margin-bottom: 20px;
-  max-height: 200px;
-  max-width: 200px;
-  border-radius: 100%;
-  border: 1px solid white;
-}
-
-#digihome {
-  margin-bottom: 4px;
+#page_title {
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #194775;
   font-size: x-large;
 }
 
-#divider {
-  margin-top: 0px;
-  color: #194775;
-}
-
-#cv {
-  font-family: "Avenir Next", Verdana, sans-serif;
-  color: #194775;
-  padding-bottom: 40px;
-  font-size: x-large;
-}
-
-#desc {
+.posts li {
+  display: list-item;
+  list-style: none;
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #335c85;
+  font-size: large;
+  margin: 30px;
 }
 
-#questions {
-  font-family: "Avenir Next", Verdana, sans-serif;
-  padding-top: 40px;
-  font-size: large;
-  color: #7c736b
-}
-
-#email {
-  font-family: "Avenir Next", Verdana, sans-serif;
-  font-size: large;
-  text-decoration: underline;
+.posts a:hover {
   color: #7c736b;
+  text-decoration: none;
 }
 
-#email:hover {
-  color: #194775;
+.posts p {
+  margin-top: 0px;
+  font-size: small;
 }
 
 .footer {
