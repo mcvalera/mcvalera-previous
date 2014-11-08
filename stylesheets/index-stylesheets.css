@@ -1,6 +1,9 @@
+html {
+  position: relative;
+}
+
 .container {
   border: 1px solid green;
-  position: relative;
 }
 
 .menu_wrapper {
@@ -58,7 +61,6 @@ a {
 }
 
 .footer {
-  position: absolute;
   text-align: center;
   margin-top: 5px;
   bottom: 0;
@@ -73,7 +75,6 @@ a {
 .socmedia img {
   height: 40px;
   width: 40px;
-  position: relative;
 }
 
 .footer p {
