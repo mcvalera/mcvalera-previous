@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
 }
 
-#container {
+.container {
 /*  border: 3px dotted green;*/
   position: relative;
 }
