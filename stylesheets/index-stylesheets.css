@@ -1,0 +1,85 @@
+.container {
+  border: 1px solid green;
+  position: relative;
+}
+
+.menu_wrapper {
+  width: 100%;
+}
+
+.menu_wrapper ul {
+text-align: center;
+border-bottom: 2px solid #ece1e1;
+margin: 0;
+padding: 16px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Avenir Next", Verdana, sans-serif;
+  margin: 55px;
+}
+
+.body_wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid red;
+  text-align: center;
+}
+
+#myphoto {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+#digihome {
+  margin-bottom: 4px;
+  font-family: "Avenir Next", Verdana, sans-serif
+}
+
+#divider {
+  margin-top: 0px;
+}
+
+#cv {
+  font-family: "Avenir Next", Verdana, sans-serif;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  margin-top: 5px;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+}
+
+.socmedia a {
+  margin: 2px;
+}
+
+.socmedia img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.footer p {
+  font-size: x-small;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
