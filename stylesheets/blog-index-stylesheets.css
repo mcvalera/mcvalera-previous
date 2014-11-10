@@ -56,10 +56,14 @@ a:active {
 .posts li {
   display: list-item;
   list-style: none;
-  font-family: "Avenir Next", Verdana, sans-serif;
-  color: #335c85;
   font-size: large;
   margin: 30px;
+}
+
+.posts a{
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #335c85;
+  text-decoration: none;
 }
 
 .posts a:hover {
@@ -68,6 +72,8 @@ a:active {
 }
 
 .posts p {
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
   margin-top: 0px;
   font-size: small;
 }
