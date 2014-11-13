@@ -91,6 +91,7 @@ a:active {
   max-height: 350px;
 }
 
+/*makes text bold*/
 #b {
   font-weight: bold;
 }
