@@ -24,7 +24,7 @@ li {
   display: inline-block;
 }
 
-a {
+.menu_wrapper a {
   text-decoration: none;
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #7c736b;
@@ -38,6 +38,8 @@ a:hover {
 a:active {
   font-weight: bold;
 }
+
+/*body starts below*/
 
 .body_wrapper {
   max-width: 700px;
