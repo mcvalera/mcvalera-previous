@@ -81,11 +81,15 @@ a:active {
   color: #335c85;
 }
 
-.post a{
+.post a {
   margin: 0;
   text-decoration: none;
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #7c736b;
+}
+
+.post a:hover {
+  color: #194775;
 }
 
 /*Images specific to t2 post, to have images side by side*/
