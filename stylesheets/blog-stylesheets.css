@@ -92,6 +92,11 @@ a:active {
   color: #194775;
 }
 
+.post pre {
+  text-align: left;
+  text-indent: -20px;
+}
+
 /*Images specific to t2 post, to have images side by side*/
 #t2img {
   border: 1px solid black;
