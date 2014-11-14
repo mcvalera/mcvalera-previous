@@ -93,8 +93,7 @@ a:active {
 }
 
 .post pre {
-  text-align: left;
-  text-indent: -20px;
+  text-align: justify;
 }
 
 /*Images specific to t2 post, to have images side by side*/
