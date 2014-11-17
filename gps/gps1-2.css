@@ -1,0 +1,24 @@
+/* include your css here */
+        #title h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #names {
+            text-align: center;
+        }
+
+        #names p {
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
