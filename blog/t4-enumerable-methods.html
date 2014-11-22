@@ -3,7 +3,7 @@
   <head>
     <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
     <!-- Insert page title below -->
-    <title></title>
+    <title>Ruby Enumerables: Cycle</title>
   </head>
 
   <body>
@@ -26,24 +26,60 @@
       <div class="body_wrapper">
         <div id="blog_title">
           <!-- insert title below -->
-          <p id="blog_title"></p>
+          <p id="blog_title">Ruby Enumerables for Fellow n00bs: Cycle</p>
         </div>
 
         <div id="date_div">
           <!-- date below -->
-          <p id="date"></p>
+          <p id="date">November 21, 2014</p>
           <p id="divider">*   *   *</p>
         </div>
 
         <div class="post">
           <!--  Begin typing post below -->
-          <p></p>
+          <p>For this week's blog post, I thought I would write about an enumerable that I've never used before, but was interested to learn about--cycle!</p>
             <!-- If you want to add an image include link below -->
             <!-- <img src="#" /> -->
           <!-- Resume typing post below if desired -->
-          <p></p>
+          <p>But first, what is an enumerable? Well, enumerables provide collections classes such as arrays and hashes with the ability to be search through, manipulate, and sort. In particular, the cycle method allows you to cycle through each element in a collection repeatedly and in order for <span id="i">n</span> times or forever if no limit is indicated. The syntax for <code>cycle</code> is as follows:</p>
+
+          <pre><code>
+            # The array named 'a' contains the first 6 months
+            a = ["January", "February", "March", "April", "May", "June"]
+
+            a.cycle { |m| puts m }
+              # January
+              # February
+              # March
+              # April
+              # May
+              # June
+            # ...this goes on forever, since I didn't indicate a limit
+            # You may want to Ctrl+C out of command line top stop it
+
+            # For a cycle with an end, see below:
+            a. cycle(2) { |m| puts m }
+              # January
+              # February
+              # March
+              # April
+              # May
+              # June
+              # January
+              # February
+              # March
+              # April
+              # May
+              # June
+          </code></pre>
+
 
           <p></p>
+
+          <pre><code>
+          </code></pre>
+          <pre><code>
+          </code></pre>
 
           <p></p>
 
