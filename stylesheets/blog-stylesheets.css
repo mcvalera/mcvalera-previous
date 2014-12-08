@@ -117,6 +117,10 @@ a:active {
   font-style: italic;
 }
 
+.note {
+  font-size: small;
+}
+
 /*footer starts below*/
 
 .footer {
