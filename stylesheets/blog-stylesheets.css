@@ -92,6 +92,10 @@ a:active {
   color: #194775;
 }
 
+.post img {
+  max-width: 650px;
+}
+
 .post pre {
   text-align: justify;
   background-color: #f5f5f5
