@@ -38,14 +38,14 @@
       function move(e) {
           // 39 for right arrow
           if (e.keyCode === 39) {
-              if (positionLeft < 850) {
+              if (positionLeft < 750) {
                   positionLeft += 50;
                   squirrelImg.style.left = positionLeft + "px";
               }
           }
           // 40 for down arrow
           if (e.keyCode === 40) {
-              if (positionTop < 600) {
+              if (positionTop < 500) {
                   positionTop += 50;
                   squirrelImg.style.top = positionTop + "px";
               }
@@ -54,7 +54,7 @@
           if (e.keyCode === 37) {
               positionLeft -= 50;
               if (positionLeft < 0) {
-                  positionLeft += 50; // CHANGE TO +=50 LATER
+                  positionLeft += 50;
               }
               squirrelImg.style.left = positionLeft + "px";
           }
@@ -62,7 +62,7 @@
           if (e.keyCode === 38) {
               positionTop -= 50;
               if (positionTop < 0) {
-                  positionTop += 50; // CHANGE TO +=50 LATER
+                  positionTop += 50;
               }
               squirrelImg.style.top = positionTop + "px";
           }
