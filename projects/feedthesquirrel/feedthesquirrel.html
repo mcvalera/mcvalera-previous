@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="feedthesquirrel-stylesheet.css"/>
+    <title>Feed Mr. Squirrel</title>
+  </head>
+  <body>
+    <h3>A Plea from Mr. Squirrel:</h3>
+    <p>My dearest human,</p>
+    <p>I seem to have misplaced my chestnuts and I am quite famished.</p>
+    <p>Would you mind assisting me in locating them?</p>
+    <p>Much obliged!</p>
+    <div id="forest">
+      <div id="squirrelImg">
+      </div>
+      <div id="chestnutsImg">
+      </div>
+    </div>
+    <script>
+      var squirrelImg = document.getElementById("squirrelImg");
+      var forest = document.getElementById("forest");
+      var chestnutImg = document.getElementById("chestnutsImg");
+
+      var squirrel = {
+          name: "Mr. Squirrel",
+          has_chestnuts: false,
+          hungry: true
+      };
+
+      var chestnuts = {
+          name: "chestnuts"
+      };
+
+      var positionLeft = 0;
+      var positionTop = 0;
+
+      function move(e) {
+          // 39 for right arrow
+          if (e.keyCode === 39) {
+              if (positionLeft < 850) {
+                  positionLeft += 50;
+                  squirrelImg.style.left = positionLeft + "px";
+              }
+          }
+          // 40 for down arrow
+          if (e.keyCode === 40) {
+              if (positionTop < 600) {
+                  positionTop += 50;
+                  squirrelImg.style.top = positionTop + "px";
+              }
+          }
+          // 37 for left arrow
+          if (e.keyCode === 37) {
+              positionLeft -= 50;
+              if (positionLeft < 0) {
+                  positionLeft += 50; // CHANGE TO +=50 LATER
+              }
+              squirrelImg.style.left = positionLeft + "px";
+          }
+          // 38 for up arrow
+          if (e.keyCode === 38) {
+              positionTop -= 100;
+              if (positionTop < 0) {
+                  positionTop += 50; // CHANGE TO +=50 LATER
+              }
+              squirrelImg.style.top = positionTop + "px";
+          }
+          foundChestnuts();
+      }
+
+      document.onkeydown = move;
+
+      // combined 3 functions previously separated for foundChestnuts, eatChestnuts and hungerLevel into the function below
+      function foundChestnuts() {
+          if ((squirrelImg.style.top == "300px") && (squirrelImg.style.left == "750px")) {
+              squirrel.has_chestnuts = true;
+              alert("Thank you for helping Mr. Squirrel find his chestnuts!");
+              var eat = confirm("Should Mr.Squirrel eat his chestnuts?");
+              if (eat === true) {
+                  alert("Time to eat!");
+                  alert("Yum! Mr. Squirrel isn't hungry anymore!");
+              } else {
+                  alert("I guess Mr. Squirrel can wait a little longer...");
+              }
+          }
+          else {
+              squirrel.has_chestnuts = false;
+          }
+      }
+    </script>
+  </body>
+<html>
+
