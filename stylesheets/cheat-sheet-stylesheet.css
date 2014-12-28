@@ -8,59 +8,63 @@
   font-family: 'Indie Flower', sans-serif, cursive;
 }
 
-#categories {
-  border: 1px dotted black;
-  width: 1200px;
+#categories_container {
+  /*border: 1px dotted black;*/
+  max-width: 800px;
   margin: 0 auto;
-  padding-left:100px;
   font-family: 'Josefin Sans', sans-serif;
   max-height: 1650px;
+  position: relative;
 }
 
 #variables {
   border: 1px solid gray;
-  width: 40%;
+  width: 300px;
   padding: 10px;
   background-color: #8ab800;
-  position: relative;
+  position: absolute;
+  left: 50px;
 }
 
 #arrays {
   border: 1px solid gray;
-  width: 40%;
-  position: relative;
-  bottom: 246px;
-  left: 600px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 425px;
   padding: 10px;
   background-color: #33c133;
 }
 
 #strings {
   border: 1px solid gray;
-  width: 40%;
-  position: relative;
-  bottom: 480px;
+  width: 300px;
+  position: absolute;
+  left: 50px;
+  top: 300px;
   padding: 10px;
   background-color: #B8DB4D;
 }
 
 #hashes {
   border: 1px solid gray;
-  width: 40%;
-  position: relative;
-  bottom: 1044px;
-  left: 600px;
+  width: 300px;
+  position: absolute;
+  top: 560px;
+  left: 425px;
   padding: 10px;
   background-color: #47b56c;
 }
 
 #expressions {
   border: 1px solid gray;
-  width: 40%;
-  position: relative;
-  bottom: 895px;
+  width: 300px;
+  position: absolute;
+  left: 50px;
+  top: 1175px;
   padding: 10px;
   background-color: #d6eb99;
+  margin-bottom: 50px;
 }
 
 .i {
@@ -68,16 +72,9 @@
 }
 
 img {
-  position: relative;
-  bottom: 665px;
-  left: 835px;
-}
-
-/*#img {
-  width: 40%;
+  position: absolute;
+  width: 320px;
+  top: 1050px;
+  left: 428px;
   border: 1px solid gray;
-  position: relative;
-  bottom: 1020px;
-  left: 600px;
-}*/
-
+}
