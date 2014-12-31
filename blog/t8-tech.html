@@ -65,9 +65,33 @@
 
           <p>WOAAAAAAH. That's pretty cool! And yes, there are very many uses for being able to find patterns and not just predefined text. In this previous case, the RegEx I used are for characters, where "\w" searches for a word character such as ASCII letters, digits or underscores and "\d" looks for digits from 0-9. Note that there are certain different things that regex does depending on what language you are coding in. For example, in .NET and Python 3, "\d" looks for a Unicode digit as opposed to just digits from 0-9 (although that is what most engines will do). </p>
 
-          <p></p>
+          <p>In addition to the cool things above that you can do with RegEx, it also provides you with modifiers so that you can perform case-insensitive and global searches. You can see the <span id="i">i</span> modifier in action in the JavaScript code below:</p>
 
-          <p></p>
+          <pre><code>
+            var str = "I want a Golden Retriever!";
+            var find = str.search(/golden\sretriever/i);
+            var change = str.replace(/golden\sretriever/i, "puppy");
+
+            console.log(find);      // 9
+            console.log(change);    // "I want a puppy!""
+            console.log(str);       // still "I want a Golden Retriever!"
+
+            /*
+            search() examines a string to see if there are any matches
+            for an expression. If there are any matches, it will return the position
+            of the string where the match is found. If not, it will return -1.
+
+            replace() simply replaces the match with a different text.
+
+            "\s" matches any white space character
+            The "i" at the end is a modifier that allows you to perform
+            case-insensitive matching
+            */
+          </code></pre>
+
+          <p>There are, of course, other modifiers. Using <span id="i">g</span> allows you to perform a global match, while <span id="i">m</span> allows you to do multiline matching.</p>
+
+          <p>To be quite honest, there are just so many regular expressions that you can use, and one post will certainly not cover them. There's a RegEx for characters, quantifiers, logic, different kinds of white-space, and various character classes, and that's not even all of them. This is where the internet becomes your best friend. I suggest looking into websites that have tables upon tables of regular expressions. I personally found <a href="http://www.rexegg.com/regex-quickstart.html">RexEgg.com</a> very useful, but there are other websites out there with cheat sheets on RegEx as well. Go explore, find a site that lists them out in a way that is most palatable to you, and then try them out for yourself!</p>
         </div>
       </div>
 
