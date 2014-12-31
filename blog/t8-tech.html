@@ -37,15 +37,33 @@
 
         <div class="post">
           <!--  Begin typing post below -->
-          <p></p>
-            <!-- If you want to add an image include link below -->
+          <p>Every now and again in my adventures in coding thus far, I encounter a couple of lines of code that look like gibberish. What could the lines upon lines of random characters with slashes everywhere be? And what do these strange combinations of characters do? Ladies and gentlemen, today is the day that I've figured out that mystery. It turns out the weird combinations of numbers and letters and symbols are simply regular expressions! What's more is that they actually mean something!</p>
+
             <img src="../imgs/regex.jpg" />
-          <!-- Resume typing post below if desired -->
-          <p></p>
 
-          <p></p>
+          <p><span id="b">Regular expressions</span> simply provide a flexible means by which one can search for strings of text that one is interested in. Think of it as the find and replace function on Microsoft Word, except instead of having to type in the exact letters/characters/symbols that you're looking for, you can instead put in a pattern and get all the results that fit that pattern. Following this comparison with Word, one can say that the simplest function of a regular expression is to match a sting of symbols exactly as it is (precisely as Word does.) like so:</p>
 
-          <p></p>
+          <table>
+            <th>Regex</th>
+            <th>Matches</th>
+            <tr>
+              <td>cat</td>
+              <td>dog<strong>cat</strong>dog</td>
+            </tr>
+          </table>
+
+          <p>Yeah, that's pretty useful. But eh, not very exciting. It's essentially like doing a Ctrl+F and we've all definitely seen that before. But what if you need to find a pattern as opposed to an exact text?</p>
+
+          <table>
+            <th>Regex</th>
+            <th>Matches</th>
+            <tr>
+              <td>\w\w\w\w_\d\d\d</td>
+              <td>duck_021, _cat_001, dogs_857, bear_253</td>
+            </tr>
+          </table>
+
+          <p>WOAAAAAAH. That's pretty cool! And yes, there are very many uses for being able to find patterns and not just predefined text. In this previous case, the RegEx I used are for characters, where "\w" searches for a word character such as ASCII letters, digits or underscores and "\d" looks for digits from 0-9. Note that there are certain different things that regex does depending on what language you are coding in. For example, in .NET and Python 3, "\d" looks for a Unicode digit as opposed to just digits from 0-9 (although that is what most engines will do). </p>
 
           <p></p>
 
