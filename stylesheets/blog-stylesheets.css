@@ -120,7 +120,6 @@ a:active {
 table, th, td {
   margin: 0 auto;
   border: 1px solid gray;
-  /*border-color: ;*/
   border-collapse: collapse;
   padding-left: 12px;
   padding-right: 12px;
