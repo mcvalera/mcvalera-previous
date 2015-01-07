@@ -114,12 +114,12 @@ a:active {
 }
 
 /*makes text bold within body of blog post*/
-#b {
+.b {
   font-weight: bold;
 }
 
 /*italicizes text within body of blog post*/
-#i {
+.i {
   font-style: italic;
 }
 
