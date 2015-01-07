@@ -44,22 +44,22 @@
           <p>An <span id="b">array</span> is an ordered collection of objects. It is integer-indexed, which means that each slot or object contained in the array is given an index number, beginning with 0. Each index corresponds to a slot in the array.</p>
 
           <pre><code>
-            []                       # an empty array
-            ['kitten', 'puppy']      # an array with two strings
-            [5, 'elephant', [1,2]]   # an array holding an integer, a string and an array
+[]                       # an empty array
+['kitten', 'puppy']      # an array with two strings
+[5, 'elephant', [1,2]]   # an array holding an integer, a string and an array
           </code></pre>
 
           <p>You can see how the numeric index works to point to a slot in an array below:</p>
 
           <pre><code>
-            fruits = ['mango', 'banana', 'orange', 'papaya']
-              #an array called 'fruits' holding 4 strings
+fruits = ['mango', 'banana', 'orange', 'papaya']
+  #an array called 'fruits' holding 4 strings
 
-            puts fruits[0]  #=> 'mango'
-            puts fruits[1]  #=> 'banana'
-            puts fruits[2]  #=> 'orange'
-            puts fruits[3]  #=> 'papaya'
-            print fruits    #=> 'mango, banana, orange, papaya'
+puts fruits[0]  #=> 'mango'
+puts fruits[1]  #=> 'banana'
+puts fruits[2]  #=> 'orange'
+puts fruits[3]  #=> 'papaya'
+print fruits    #=> 'mango, banana, orange, papaya'
           </code></pre>
 
           <p>As a reminder, the command <code>print</code> just tells the computer to print out something to the console without adding a newline, while <code>puts</code> essentially tells the computer to print something out to the console and then adds a newline after executing the command (newline is really just like pressing enter on the keyboard to get to the next line). In the above example, we used <code>puts fruits[0] </code>to puts out the <span id="i">first </span>fruit in the array, <code>puts fruits[1]</code> to puts out the <span id="i">second</span> fruit in the array, and so on and so forth.</p>
@@ -67,22 +67,22 @@
           <p>For our purposes, there are two basic ways to create an array (although there are really more ways to do so out in the world). The first, which I used in the above examples, is to use the literal constructor []. The second is to use Array.new as you can see below.</p>
 
           <pre><code>
-            Array.new               # an empty, unnamed array, similar to just []
-            Array.new(20)           # an unnamed array with a size of 20 elements
-            fruits = Array.new      # an empty array called 'fruits'
-            fruits = Array.new(4)   # an array called 'fruits' with 4 elements
+Array.new               # an empty, unnamed array, similar to just []
+Array.new(20)           # an unnamed array with a size of 20 elements
+fruits = Array.new      # an empty array called 'fruits'
+fruits = Array.new(4)   # an array called 'fruits' with 4 elements
           </code></pre>
 
           <p><span id="b">Hashes</span> are a collection of unique keys and their values. They are similar to arrays, except instead of being integer-indexed, hashes allow you to use any kind of object to refer to a corresponding value. You can create a blank hash by using two curly braces <code>{}</code>, or to make a hash that is populated, you may do something like this:</p>
 
           <pre><code>
-            birthdays = {
-              'mom' => 'March 15',
-              'dad' => 'September 23',
-              'brother' => 'June 24',
-              'sister' => 'October 31',
-              'me' => 'September 8'
-            }
+birthdays = {
+  'mom' => 'March 15',
+  'dad' => 'September 23',
+  'brother' => 'June 24',
+  'sister' => 'October 31',
+  'me' => 'September 8'
+}
           </code></pre>
 
           <p>In the above example, the names are the 'keys' while the birthdays are the 'values.' We are able to retrieve values from a hash by using the [] operator and enclosing the key within it. For example, if we wanted to find when my mom's birthday was, we would have to type in <code>birthdays['mom']</code>.</p>
