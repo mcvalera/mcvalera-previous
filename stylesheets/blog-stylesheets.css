@@ -98,7 +98,10 @@ a:active {
 
 .post pre {
   text-align: justify;
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
 }
 
 /*Images specific to t2 post, to have images side by side*/
