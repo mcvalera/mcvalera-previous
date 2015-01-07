@@ -41,7 +41,7 @@
             <!-- If you want to add an image include link below -->
             <!-- <img src="#" /> -->
           <!-- Resume typing post below if desired -->
-          <p>In essence, a <span id="b">Class</span> allows you to group methods together so that each time you create an object of a class, each object will behave essentially the same way. Below I've created a class called Yearbook (class names are always in CamelCase) with the methods name, birthday, and fave_quote. Note that the variables contained within each method that have the @ symbol are called <span id="b">instance variables</span>. They are different from local variables in that you can access instance variables from other methods.</p>
+          <p>In essence, a <span class="b">Class</span> allows you to group methods together so that each time you create an object of a class, each object will behave essentially the same way. Below I've created a class called Yearbook (class names are always in CamelCase) with the methods name, birthday, and fave_quote. Note that the variables contained within each method that have the @ symbol are called <span class="b">instance variables</span>. They are different from local variables in that you can access instance variables from other methods.</p>
 
           <pre><code>
 class Yearbook
@@ -82,7 +82,7 @@ puts "Favorite Quote: #{cvalera.fave_quote}"
 time / For decisions and revisions which a minute will reverse.
           </code></pre>
 
-          <p>But wait! A lot of that code above is repetitive isn't it? There has to be a way to make it more streamlined isn't there? Why yes, there is! What we need is an attribute. An <span id="b">attribute</span> is a property of an object whose value can be read and/or written through the object. To illustrate, in the code above we can replace our name, birthday, and fave_quote methods with a corresponding attribute reader (written as <span id="i">attr_reader</span>) like so:</p>
+          <p>But wait! A lot of that code above is repetitive isn't it? There has to be a way to make it more streamlined isn't there? Why yes, there is! What we need is an attribute. An <span class="b">attribute</span> is a property of an object whose value can be read and/or written through the object. To illustrate, in the code above we can replace our name, birthday, and fave_quote methods with a corresponding attribute reader (written as <span class="i">attr_reader</span>) like so:</p>
 
           <pre><code>
 class Yearbook
@@ -102,7 +102,7 @@ end
 #  end
           </code></pre>
 
-          <p>What if I want to add a new field called nickname to my yearbook and I want my program to be able to return it now as well as to change it later on? As you've probably guessed, I would need the attribute reader, but I would also need what is called the attribute writer (written as <span id="i">attr_writer</span>). Similar to the attribute reader, the attribute writer is a stand in for a similar portion of your code. But hey, Ruby has a shortcut for when you need an attribute writer and attribute reader. This is called the attribute accessor (<span id="i">attr_accessor</span>)!</p>
+          <p>What if I want to add a new field called nickname to my yearbook and I want my program to be able to return it now as well as to change it later on? As you've probably guessed, I would need the attribute reader, but I would also need what is called the attribute writer (written as <span class="i">attr_writer</span>). Similar to the attribute reader, the attribute writer is a stand in for a similar portion of your code. But hey, Ruby has a shortcut for when you need an attribute writer and attribute reader. This is called the attribute accessor (<span class="i">attr_accessor</span>)!</p>
 
           <pre><code>
 attr_reader :nickname
