@@ -73,11 +73,36 @@ a:active {
   text-decoration: none;
 }
 
+#post_title {
+  font-size: x-large;
+  text-align: justify;
+}
+
+
 .posts p {
   font-family: "Avenir Next", Verdana, sans-serif;
   color: #194775;
   margin-top: 0px;
   font-size: small;
+}
+
+.post_date {
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
+  margin-top: 0px;
+  font-size: small;
+}
+
+/*.post_summary {
+  font-family: "Avenir Next", Verdana, sans-serif;
+  color: #194775;
+  margin-top: 0px;
+  text-align: justify;
+  font-size: medium;
+}*/
+
+.more {
+  font-weight: bold;
 }
 
 /*footer starts below*/
