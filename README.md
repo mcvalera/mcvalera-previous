@@ -1,4 +1,3 @@
-mcvalera.github.io
-==================
+# mcvalera.github.io (deprecated)
 
-DBC Phase 0 site
+A site built when I was in the initial stages of learning. You may find the repo for my current site [here](https://github.com/mcvalera/mcvalera.github.io)
